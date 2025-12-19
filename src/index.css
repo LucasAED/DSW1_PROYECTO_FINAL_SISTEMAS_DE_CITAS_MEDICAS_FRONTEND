@@ -1,0 +1,39 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary-color: #007bff; /* Azul Médico */
+  --secondary-color: #0ea5e9;
+  --accent-color: #e0f2fe;
+  --text-dark: #1e293b;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  color: var(--text-dark);
+}
+
+/* Animaciones */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Navbar */
+.navbar-custom {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--accent-color) 0%, #ffffff 100%);
+  padding: 60px 0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 40px;
+}
